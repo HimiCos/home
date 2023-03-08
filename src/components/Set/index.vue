@@ -1,19 +1,19 @@
 <template>
   <div class="setting">
     <el-collapse class="collapse" v-model="activeName" accordion>
-      <el-collapse-item title="壁纸设置" name="1">
+      <el-collapse-item title="壁紙設置" name="1">
         <div class="bg-set">
           <el-radio-group v-model="bgSet" text-color="#ffffff">
-            <el-radio label="0" size="large" border>默认壁纸</el-radio>
-            <el-radio label="1" size="large" border>每日一图</el-radio>
-            <el-radio label="2" size="large" border>随机风景</el-radio>
-            <el-radio label="3" size="large" border>随机动漫</el-radio>
+            <el-radio label="0" size="large" border>默認壁紙</el-radio>
+            <el-radio label="1" size="large" border>每日一圖</el-radio>
+            <el-radio label="2" size="large" border>隨機風景</el-radio>
+            <el-radio label="3" size="large" border>隨機動漫</el-radio>
           </el-radio-group>
         </div>
       </el-collapse-item>
-      <el-collapse-item title="其他设置" name="2">
+      <el-collapse-item title="其他設置" name="2">
         <div class="item">
-          <span class="text">建站日期显示</span>
+          <span class="text">建站日期顯示</span>
           <el-switch
             v-model="siteStartShow"
             inline-prompt
@@ -22,11 +22,11 @@
           />
         </div>
       </el-collapse-item>
-      <el-collapse-item title="其他设置" name="3">
-        <div>设置内容待增加</div>
+      <el-collapse-item title="其他設置" name="3">
+        <div>設置內容待增加</div>
       </el-collapse-item>
-      <el-collapse-item title="其他设置" name="4">
-        <div>设置内容待增加</div>
+      <el-collapse-item title="其他設置" name="4">
+        <div>設置內容待增加</div>
       </el-collapse-item>
     </el-collapse>
   </div>

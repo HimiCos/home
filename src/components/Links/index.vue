@@ -61,17 +61,17 @@ let linksData = [
   {
     icon: Compass,
     name: "起始頁",
-    link: "https://himicos.cc/",
+    link: "https://nav.himicos.cc/",
   },
   {
     icon: Book,
     name: "網址集",
-    link: "https://himicos.cc/",
+    link: "https://web.himicos.cc/",
   },
   {
     icon: Flask,
-    name: "實驗室",
-    link: "https://himicos.cc/",
+    name: "UPTIME",
+    link: "https://uptime.himicos.cc/",
   },
 ];
 

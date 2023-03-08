@@ -14,7 +14,7 @@
         @click="store.musicOpenState = true"
       >
         <music-menu theme="filled" size="18" fill="#efefef" />
-        <span>打开音乐播放器</span>
+        <span>打開音樂播放器</span>
       </div>
     </Transition>
     <!-- 一言内容 -->
@@ -54,7 +54,7 @@ const getHitokotoData = () => {
     })
     .catch(() => {
       ElMessage({
-        message: "一言获取失败",
+        message: "一言獲取失敗",
         icon: h(Error, {
           theme: "filled",
           fill: "#efefef",
@@ -65,8 +65,8 @@ const getHitokotoData = () => {
 
 // 更新一言数据
 const updateHitokoto = () => {
-  hitokotoData.text = "新的一言正在赶来的路上";
-  hitokotoData.from = "来源加载中";
+  hitokotoData.text = "新的一言正在趕來的路上";
+  hitokotoData.from = "來源加載中";
   // 防抖
   debounce(() => {
     getHitokotoData();

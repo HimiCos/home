@@ -50,27 +50,27 @@ let linksData = [
   },
   {
     icon: Cloud,
-    name: "网盘",
+    name: "網盤",
     link: "https://alist.himicos.cc/",
   },
   {
     icon: CompactDisc,
-    name: "音乐",
+    name: "音樂",
     link: "https://music.himicos.cc/",
   },
   {
     icon: Compass,
-    name: "起始页",
+    name: "起始頁",
     link: "https://himicos.cc/",
   },
   {
     icon: Book,
-    name: "网址集",
+    name: "網址集",
     link: "https://himicos.cc/",
   },
   {
     icon: Flask,
-    name: "实验室",
+    name: "實驗室",
     link: "https://himicos.cc/",
   },
 ];

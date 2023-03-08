@@ -10,7 +10,7 @@
     <span class="sm-hidden">{{ weatherData.weather.windpower }}&nbsp;级</span>
   </div>
   <div class="weather" v-else>
-    <span>天气数据获取失败</span>
+    <span>天氣數據獲取失敗</span>
   </div>
 </template>
 
@@ -58,18 +58,18 @@ const getWeatherData = () => {
                 windpower: res.lives[0].windpower,
               };
             } else {
-              onError("天气信息获取失败");
+              onError("天氣信息獲取失敗");
             }
           })
           .catch(() => {
-            onError("天气信息获取失败");
+            onError("天氣信息獲取失敗");
           });
       } else {
-        onError("地理位置获取失败");
+        onError("地理位置獲取失敗");
       }
     })
     .catch(() => {
-      onError("地理位置获取失败");
+      onError("地理位置獲取失敗");
     });
 };
 

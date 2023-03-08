@@ -88,33 +88,8 @@ export const helloInit = () => {
     }
     ElMessage({
         dangerouslyUseHTMLString: true,
-        message: `<strong>${hello}</strong> 欢迎来到我的主页`,
+        message: `<strong>${hello}</strong> 歡迎來到我的主頁`,
     });
-}
-
-// 默哀模式
-export const checkDays = () => {
-    let myDate = new Date;
-    let mon = myDate.getMonth() + 1;
-    let date = myDate.getDate();
-    let days = ['4.4', '5.12', '7.7', '9.9', '9.18', '12.13'];
-    for (let day of days) {
-        let d = day.split('.');
-        if (mon == d[0] && date == d[1]) {
-            console.log("今天是纪念日");
-            let gray = document.createElement("style");
-            document.body.appendChild(gray);
-            gray.innerHTML = "html{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);_filter:none}";
-            ElMessage({
-                message: "今天是中国国家纪念日",
-                duration: 14000,
-                icon: h(SpaCandle, {
-                    theme: "filled",
-                    fill: "#efefef",
-                }),
-            });
-        }
-    }
 }
 
 // 建站日期统计
@@ -125,10 +100,10 @@ export const siteDateStatistics = (startDate) => {
     const differenceInMonths = differenceInDays / 30;
     const differenceInYears = differenceInMonths / 12;
     if (differenceInYears >= 1) {
-        return `本站已经苟活了 ${Math.floor(differenceInYears)} 年 ${Math.floor(differenceInMonths % 12)} 月 ${Math.round(differenceInDays % 30)} 天`;
+        return `本站已經苟活了 ${Math.floor(differenceInYears)} 年 ${Math.floor(differenceInMonths % 12)} 月 ${Math.round(differenceInDays % 30)} 天`;
     } else if (differenceInMonths >= 1) {
-        return `本站已经苟活了 ${Math.floor(differenceInMonths)} 月 ${Math.round(differenceInDays % 30)} 天`;
+        return `本站已經苟活了 ${Math.floor(differenceInMonths)} 月 ${Math.round(differenceInDays % 30)} 天`;
     } else {
-        return `本站已经苟活了 ${Math.round(differenceInDays)} 天`;
+        return `本站已經苟活了 ${Math.round(differenceInDays)} 天`;
     }
 }

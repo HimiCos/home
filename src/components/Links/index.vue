@@ -4,7 +4,7 @@
       <Icon size="20">
         <Link />
       </Icon>
-      <span class="title">网站列表</span>
+      <span class="title">網站列表</span>
     </div>
     <el-row class="link-all" :gutter="20">
       <el-col
@@ -66,12 +66,12 @@ let linksData = [
   {
     icon: Book,
     name: "网址集",
-    link: "https://web.imsyy.top/",
+    link: "https://himicos.cc/",
   },
   {
     icon: Flask,
     name: "实验室",
-    link: "https://lab.imsyy.top/",
+    link: "https://himicos.cc/",
   },
 ];
 

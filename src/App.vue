@@ -57,9 +57,11 @@ onMounted(() => {
   cursorInit();
   // 欢迎提示
   helloInit();
+  // 默哀模式
+  checkDays();
   // 加载完成事件
   window.addEventListener("load", () => {
-    console.log("加載完成");
+    console.log("加载完成");
     // 去除加载标记
     document.getElementsByTagName("body")[0].className = "";
     // 给加载动画添加结束标记
@@ -70,7 +72,7 @@ onMounted(() => {
   // 屏蔽右键
   document.oncontextmenu = () => {
     ElMessage({
-      message: "為了瀏覽體驗，本站禁用右鍵",
+      message: "为了浏览体验，本站禁用右键",
       grouping: true,
       duration: 2000,
     });
@@ -82,9 +84,9 @@ onMounted(() => {
     if (event.button == 1) {
       store.backgroundShow = !store.backgroundShow;
       if (store.backgroundShow) {
-        ElMessage("已開啟壁紙展示狀態");
+        ElMessage("已开启壁纸展示状态");
       } else {
-        ElMessage("已退出壁紙展示狀態");
+        ElMessage("已退出壁纸展示状态");
       }
     }
   });
@@ -97,15 +99,15 @@ onMounted(() => {
   let styleTitle1 = "font-size: 20px;font-weight: 600;color: rgb(244,167,89);";
   let styleTitle2 = "font-size:12px;color: rgb(244,167,89);";
   let styleContent = "color: rgb(30,152,255);";
-  let title1 = "HimiCosの主頁";
+  let title1 = "無名の主页";
   let title2 = `
  _   _ _           _ _____           
 | | | (_)         (_)  __ \          
 | |_| |_ _ __ ___  _| /  \/ ___  ___ 
 |  _  | | '_ ` _ \| | |    / _ \/ __|
 | | | | | | | | | | | \__/\ (_) \__ \
-\_| |_/_|_| |_| |_|_|\____/\___/|___/`;                                                                          
-  let content = `\n\n版本: ${config.version}\n主頁: ${config.home}\nGithub: ${config.github}`;
+\_| |_/_|_| |_| |_|_|\____/\___/|___/`;
+  let content = `\n\n版本: ${config.version}\n主页: ${config.home}\nGithub: ${config.github}`;
   console.info(
     `%c${title1} %c${title2} %c${content}`,
     styleTitle1,

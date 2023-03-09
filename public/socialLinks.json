@@ -16,11 +16,11 @@
 }, {
     "name": "Email",
     "icon": "/images/icon/email.png",
-    "tip": "来封 Email ~",
+    "tip": "來封 Email ~",
     "url": "mailto:ineewhite@gmail.com"
 }, {
     "name": "Telegram",
     "icon": "/images/icon/telegram.png",
-    "tip": "你懂的 ~",
+    "tip": "來找我聊天吧 ~",
     "url": "https://t.me/Himicos"
 }]

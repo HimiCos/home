@@ -57,8 +57,6 @@ onMounted(() => {
   cursorInit();
   // 欢迎提示
   helloInit();
-  // 默哀模式
-  checkDays();
   // 加载完成事件
   window.addEventListener("load", () => {
     console.log("加载完成");

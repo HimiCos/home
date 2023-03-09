@@ -7,7 +7,7 @@
     v-show="store.musicOpenState"
   >
     <div class="btns">
-      <span @click="musicListShow = true">音乐列表</span>
+      <span @click="musicListShow = true">音樂列表</span>
       <span @click="store.musicOpenState = false">回到一言</span>
     </div>
     <div class="control">
@@ -43,7 +43,7 @@
         <span>{{
           store.getPlayerData.name
             ? store.getPlayerData.name + " - " + store.getPlayerData.artist
-            : "未播放音乐"
+            : "未播放音樂"
         }}</span>
       </div>
       <div class="volume" v-show="volumeShow">

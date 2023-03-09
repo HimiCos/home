@@ -19,7 +19,7 @@ export const mainStore = defineStore("main", {
             playerState: false, // 当前播放状态
             playerTitle: null, // 当前播放歌曲名
             playerArtist: null, // 当前播放歌手名
-            playerLrc: "歌词加载中", // 当前播放歌词
+            playerLrc: "歌詞加載中", // 当前播放歌词
         }
     },
     getters: {

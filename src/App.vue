@@ -100,8 +100,7 @@ onMounted(() => {
   let styleTitle2 = "font-size:12px;color: rgb(244,167,89);";
   let styleContent = "color: rgb(30,152,255);";
   let title1 = "無名の主页";
-  let title2 = `
- _   _ _           _ _____           
+  let title2 = ` _   _ _           _ _____           
 | | | (_)         (_)  __ \          
 | |_| |_ _ __ ___  _| /  \/ ___  ___ 
 |  _  | | '_ ` _ \| | |    / _ \/ __|

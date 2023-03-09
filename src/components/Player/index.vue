@@ -115,7 +115,7 @@ onMounted(() => {
         // 更改播放器加载状态
         store.musicIsOk = true;
         console.log(
-          "音乐加载完成",
+          "音樂加載完成",
           res,
           playIndex.value,
           playListCount.value,
@@ -135,7 +135,7 @@ onMounted(() => {
       .catch(() => {
         store.musicIsOk = false;
         ElMessage({
-          message: "播放器加载失败",
+          message: "播放器加載失敗",
           grouping: true,
           icon: h(PlayWrong, {
             theme: "filled",

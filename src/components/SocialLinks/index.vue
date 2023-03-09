@@ -8,7 +8,7 @@
         :href="item.url"
         target="_blank"
         @mouseenter="socialTip = item.tip"
-        @mouseleave="socialTip = '通过这里联系我吧'"
+        @mouseleave="socialTip = '通過這裡聯繫我吧'"
       >
         <img class="icon" :src="item.icon" height="24" />
       </a>
@@ -24,7 +24,7 @@ import { Error } from "@icon-park/vue-next";
 
 // 社交链接数据
 let socialLinksData = ref([]);
-let socialTip = ref("通过这里联系我吧");
+let socialTip = ref("通過這裡聯繫我吧");
 
 // 获取社交链接数据
 const getSocialLinksData = () => {
@@ -36,7 +36,7 @@ const getSocialLinksData = () => {
     .catch((err) => {
       console.error(err);
       ElMessage({
-        message: "社交链接获取失败",
+        message: "社交鏈接獲取失敗",
         grouping: true,
         icon: h(Error, {
           theme: "filled",

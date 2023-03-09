@@ -24,7 +24,7 @@
         <div class="version">
           <div class="num">v&nbsp;{{ config.version }}</div>
           <el-tooltip
-            content="Github 源代码仓库"
+            content="Github 源代碼倉庫"
             placement="right"
             :show-arrow="false"
           >
@@ -39,7 +39,7 @@
         <el-card class="update">
           <template #header>
             <div class="card-header">
-              <span>更新日志</span>
+              <span>更新日誌</span>
             </div>
           </template>
           <div class="upnote">
@@ -57,7 +57,7 @@
       <el-col :span="12" class="right">
         <div class="title">
           <setting-two theme="filled" size="28" fill="#ffffff60" />
-          <span class="name">全局设置</span>
+          <span class="name">全局設置</span>
         </div>
         <Set />
       </el-col>
@@ -87,16 +87,16 @@ let siteUrl = import.meta.env.VITE_SITE_URL.split(".");
 // 更新日志
 let upData = reactive({
   new: [
-    "采用 Vue 进行重构",
-    "音乐歌单支持快速自定义",
-    "壁纸支持个性化设置",
-    "音乐播放器支持音量控制",
+    "採用 Vue 進行重構",
+    "音樂歌單支持快速自定義",
+    "壁紙支持個性化設置",
+    "音樂播放器支持音量控制",
   ],
   fix: [
-    "修复天气 API",
-    "时光胶囊显示错误",
-    "移动端动画及细节",
-    "图标更换为 IconPark",
+    "修復天氣 API",
+    "時光膠囊顯示錯誤",
+    "移動端動畫及細節",
+    "圖標更換為 IconPark",
   ],
 });
 

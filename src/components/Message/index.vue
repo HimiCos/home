@@ -52,7 +52,7 @@ const changeBox = () => {
     store.boxOpenState = !store.boxOpenState;
   } else {
     ElMessage({
-      message: "当前页面宽度不足以开启盒子",
+      message: "當前頁面寬度不足以開啟盒子",
       grouping: true,
       icon: h(Error, {
         theme: "filled",

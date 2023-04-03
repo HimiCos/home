@@ -66,7 +66,7 @@ let linksData = [
   },
   {
     icon: Robot,
-    name: "網址集",
+    name: "ChatGPT",
     link: "https://openai.himicos.cc/",
   },
   {

@@ -38,7 +38,7 @@ import {
   Compass,
   Book,
   Flask,
-  Chat,
+  Message-bot,
 } from "@vicons/fa";
 
 // 网站链接数据
@@ -65,7 +65,7 @@ let linksData = [
     link: "https://nav.himicos.cc/",
   },
   {
-    icon: Chat,
+    icon: Message-bot,
     name: "網址集",
     link: "https://openai.himicos.cc/",
   },

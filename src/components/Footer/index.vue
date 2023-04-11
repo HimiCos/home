@@ -14,7 +14,7 @@
           {{ config.author }}
         </a></span
         >
-        >&nbsp;&amp;
+        &nbsp;&amp;
         <!-- 站点备案 -->
         <a href="https://beian.miit.gov.cn" target="_blank"
           >鲁ICP备2023007969号</a

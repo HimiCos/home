@@ -14,10 +14,11 @@
           {{ config.author }}
         </a></span
         >
-      <!-- 站点备案 -->
-      <a href="https://beian.miit.gov.cn" target="_blank"
-        >鲁ICP备2023007969号</a
-      >
+        >&nbsp;&amp;
+        <!-- 站点备案 -->
+        <a href="https://beian.miit.gov.cn" target="_blank"
+          >鲁ICP备2023007969号</a
+        >
     </div>
     <div class="lrc" v-show="store.playerState">
       <music-one theme="filled" size="18" fill="#efefef" />
